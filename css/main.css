@@ -405,3 +405,65 @@ h1 {
   line-height: 26px;
   margin-bottom: 8px;
 }
+
+
+/* PURCHASE STYLES */
+.purchase {
+  padding: 56px 0px 64px;
+  background-color: var(--pripary-color);
+}
+.purchase__container {
+  text-align: center;
+}
+.purchase__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: var(--site-white-color);
+  margin-bottom: 16px;
+}
+.purchase__text {
+  width: 100%;
+  max-width: 719px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--site-white-color);
+  margin-bottom: 24px;
+}
+.purchase__form {
+  padding: 24px;
+  background-color: var(--site-white-color);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 348px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+.purchase__input {
+  background-color: #f3f3f3;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  margin-bottom: 16px;
+  padding: 16px;
+  border-radius: 5px;
+  outline: none;
+}
+.purchase__img {
+  position: absolute;
+  top: 178px;
+  right: 40px;
+  cursor: pointer;
+
+}
+.purchase__btn {
+  display: inline-block;
+  width: 167px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  outline: none;
+}

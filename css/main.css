@@ -96,7 +96,7 @@ h1 {
 }
 
 .page-title {
-  font-family: 'Open Sans';
+  font-family: var(--site-font);
   font-weight: 700;
   font-size: 40px;
   line-height: 130%;
@@ -179,6 +179,7 @@ h1 {
   box-shadow: 0px 4px 24px 0px rgba(0,0,0,0.1);
   z-index: 1;
   border-radius: 5px;
+
 }
 .header__item-wrapper-text a {
   color: var(--site-color);
@@ -186,10 +187,11 @@ h1 {
   text-decoration: none;
   display: block;
   outline: none;
+  transition: all 0.2s;
 }
 .header__item-wrapper-text a:hover {
   background-color: var(--pripary-color);
-  color: var(--text-color);
+  color: var(--site-white-color);
 }
 .header__item-wrapper-text a:active {
   background-color: var(--pripary-color);
@@ -476,9 +478,6 @@ h1 {
   background-color: var(--site-footer-bg-color);
   padding: 56px 0;
 }
-.footer__container {
-  
-}
 .footer__list {
   display: flex;
 }
@@ -540,4 +539,113 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* XIZMATLAR */
+.xizmatlar {
+  padding: 128px 0px 72px;
+}
+.xizmatlar__container {
+}
+.xizmatlar__title {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.xizmatlar__text {
+  width: 100%;
+  max-width: 810px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 400;
+}
+
+
+/* MAKE STYLES */
+.make {
+  padding: 80px 0;
+  background-color: #f4f4f4;
+}
+
+.make__container {
+  text-align: center;
+
+}
+.make__list {
+  /* max-width: 804px; */
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+
+
+}
+.make__item {
+  background-color: var(--site-white-color);
+  box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+
+}
+.make__item:not(:last-child) {
+  margin-bottom: 64px;
+}
+.make__img {
+  object-fit: contain;
+  object-position: center;
+  margin-right: 40px;
+}
+.make__text-wrapper {
+
+}
+.make__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 16px;
+}
+.make__text {
+  max-width: 500px;
+  margin-bottom: 16px;
+}
+.make__item-list {
+
+}
+.make__item-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.make__item-item:last-child {
+  margin-bottom: 16px;
+}
+.make__item-item span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: var(--pripary-color);
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.make__item-item-text {
+}
+.make__btn {
+  margin-right: 16px;
+}
+.make__link {
+  color: var(--pripary-color);
+  text-decoration-line: underline;
 }
